@@ -1,0 +1,5 @@
+<script>
+h = window.chrome.webview;
+h.addEventListener("message",(e)=>{console.log("eviljs get from client: "+ JSON.stringify(e.data));})
+h.postMessage('{"jsCallId":"ida4f2c8a781475","functionName":"CCIUIAPI_GetAccessToken","params":{}}')
+</script>
